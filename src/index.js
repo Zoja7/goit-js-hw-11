@@ -26,8 +26,8 @@ async function onSubmit(evt) {
   page = 1;
 
     if (!queryForSearch) {
-        hideLoadBtn();
-    // loadBtn.style.display = 'none';
+        // hideLoadBtn();
+    loadBtn.style.display = 'none';
     Notify.info('Please enter word for search!!!');
     return;
   }
