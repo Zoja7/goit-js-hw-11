@@ -22,13 +22,12 @@ export function renderGallery(arr, container) {
                     <b>Comments: ${comments}</b>
                     </p>
                     <p class="info-item">
-                    <b>Downloads: ${ downloads }</b>
+                    <b>Downloads: ${downloads}</b>
                     </p>
                 </div>
             </div>
         </a>
-
-`)
+ `).join("");
     container.insertAdjacentHTML("beforeend",markup);
 
 }

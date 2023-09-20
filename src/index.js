@@ -36,6 +36,8 @@ async function onSubmit(evt) {
       const { hits, totalHits } = await fetchImgs(queryForSearch, page);
       
     if (hits.length === 0) {
+      
+       loadBtn.style.display = 'none';
       Notify.info(
         'Sorry, there are no images matching your search query. Please try again!'
       );
